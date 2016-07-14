@@ -16,7 +16,7 @@
 
 package com.hazelcast.jet.stream.impl;
 
-import com.hazelcast.jet.dag.tap.SourceTap;
+import com.hazelcast.jet.dag.source.Source;
 import com.hazelcast.jet.io.tuple.Tuple;
 import com.hazelcast.jet.stream.Distributed;
 
@@ -26,5 +26,5 @@ public interface SourcePipeline<E_OUT> extends Pipeline<E_OUT> {
      */
     Distributed.Function<Tuple, E_OUT> fromTupleMapper();
 
-    SourceTap getSourceTap();
+    Source getSourceTap();
 }
