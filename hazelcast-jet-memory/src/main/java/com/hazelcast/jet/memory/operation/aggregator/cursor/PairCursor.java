@@ -14,27 +14,23 @@
  * limitations under the License.
  */
 
-package com.hazelcast.jet.io;
+package com.hazelcast.jet.memory.operation.aggregator.cursor;
+
+import com.hazelcast.jet.io.Pair;
+import com.hazelcast.jet.memory.binarystorage.comparator.Comparator;
 
 /**
- * Context to work with Input/Output system
+ * Cursor over a range of pairs.
  */
-public interface IOContext {
-    /**
-     * @param typeID - identifier of type;
-     * @return - object which represents type;
-     */
-    DataType lookupDataType(byte typeID);
+public interface PairCursor {
+    void reset(Comparator comparator);
+
+    boolean advance();
 
     /**
-     * @param object - object;
-     * @return - object which represents type of @param object;
+     * Returns the current cursor state as a pair. May return itself, therefore
+     * the returned object is valid only until {@code advance} or {@code reset} is
+     * called on this cursor.
      */
-    DataType resolveDataType(Object object);
-
-    /**
-     * @param dataType -
-     */
-    void registerDataType(DataType dataType);
+    Pair asPair();
 }
-
