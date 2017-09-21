@@ -17,4 +17,4 @@
 /**
  * Apache Hadoop HDFS read/write support for Hazelcast Jet.
  */
-package com.hazelcast.jet.processor;
+package com.hazelcast.jet.core.processor;

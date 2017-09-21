@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.hazelcast.jet.processor;
+package com.hazelcast.jet.core.processor;
 
-import com.hazelcast.jet.ProcessorMetaSupplier;
+import com.hazelcast.jet.core.ProcessorMetaSupplier;
 import com.hazelcast.jet.Util;
 import com.hazelcast.jet.function.DistributedBiFunction;
 import com.hazelcast.jet.function.DistributedFunction;
