@@ -47,7 +47,7 @@
         <module>grpc</module>
         <module>hadoop</module>
         <module>hello-world</module>
-        <module>imdg-connectors</module>
+        <module>platform-connectors</module>
         <module>jdbc</module>
         <module>jms</module>
         <module>job-management</module>
@@ -75,9 +75,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.hazelcast.jet</groupId>
-            <artifactId>hazelcast-jet</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast</artifactId>
+            <version>${hazelcast.version}</version>
         </dependency>
     </dependencies>
 

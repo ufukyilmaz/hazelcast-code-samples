@@ -18,9 +18,11 @@
 
         <jdk.version>1.8</jdk.version>
         <jdk.integration.version>1.8</jdk.integration.version>
+        <jsr107.api.version>1.0.0</jsr107.api.version>
+        <avro.version>1.10.2</avro.version>
+        <jackson.version>2.11.2</jackson.version>
 
         <hazelcast.version>5.0-SNAPSHOT</hazelcast.version>
-        <hazelcast-jet.version>3.2.2</hazelcast-jet.version>
         <hazelcast-jclouds.version>3.7.2</hazelcast-jclouds.version>
 
         <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
@@ -59,6 +61,7 @@
         <module>helper</module>
         <module>jcache</module>
         <module>jcache-1.1</module>
+        <module>jet</module>
         <module>jmx</module>
         <module>json</module>
         <module>learning-basics</module>
